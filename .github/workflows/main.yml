@@ -1,1 +1,11 @@
 name: print-name
+on:
+  push:
+    branches:
+      - main
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print my name
+        run: echo "Hello, my name is Bilal Ahmed"
